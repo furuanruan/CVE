@@ -9,3 +9,5 @@ Attack Vectors:
   2.Upload a pdf file containing XSS malicious code on the chat page: https://tawk.to/chat/*
   
 Now when someone accesses the malicious file(The uploaded file address can be easily obtained), alert(1) will be executed.
+
+See Figure 1 and Figure 2 for details
