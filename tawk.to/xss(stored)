@@ -1,0 +1,11 @@
+Description:
+A cross-site scripting (XSS) vulnerability in tawk.to allows a remote attacker (user) to inject arbitrary Javascript or HTML by uploading a pdf file containing malicious code, which would result in XSS being stored in its server files.
+
+Vulnerability Type: Stored XSS
+
+Attack Vectors:
+
+  1.Construct pdf files containing malicious code: javascript:app.alert(1);
+  2.Upload a pdf file containing XSS malicious code on the chat page: https://tawk.to/chat/*
+  
+Now when someone accesses the malicious file(The uploaded file address can be easily obtained), alert(1) will be executed.
